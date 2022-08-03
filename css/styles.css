@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: 'Rubik', sans-serif;
+    background: #000;
+    color: #fff;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ccc;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+}
+
+button,
+sub-header end .btn {
+    display: inline-block;
+    background: #fff;
+    color: #333;
+    min-width: 8.4375rem;
+    padding: 1.25rem 2rem;
+    font-size: .9375rem;
+    font-weight: 600;
+    line-height: .875rem;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.625rem;
+    font-weight: 300;
+}
+
+h4,
+h4 {
+    color: #00ed82;
+    font-size: .8125rem;
+    text-transform: uppercase;
+}
+
+text-xl {
+    font-size: 4.375rem;
+    font-weight: bold;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    flex-direction: column;
+    height: 530px;
+    position: relative;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 11.25rem;
+    z-index: 1;
+    background: linear-gradient(180deg,
+            rgba(0, 0, 0, 0.76) 15.54%,
+            rgba(0, 0, 0, 0.192) 60.23%,
+            rgba(0, 0, 0, 8e-5) 100%);
+}
+
+header img:first-child {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+}
+
+header nav {
+    display: flex;
+    position: relative;
+    z-index: 2;
+    justify-content: flex-end;
+    padding: 1.25rem 2.5rem;
+}
+
+header nav li {
+    display: inline;
+}
+
+header nav button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .0625rem;
+}
+
+header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    top: 2rem;
+    z-index: 2;
+}
+
+header-content img {
+    width: 16.875rem;
+    margin: 1.25rem 0;
+}
+
+header-content button:hover {
+    opacity: 0.8;
+}
+
+header-text-1 {
+    font-size: 1.375rem;
+    font-weight: bold;
+}
+
+header-text-2 {
+    font-size: 1.125rem;
+    margin: 1rem;
+}
+
+legal-text {
+    font-size: .625rem;
+    margin: 1rem;
+}
+
+/* Sub Header */
+sub-header {
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    gap: 2.5rem;
+    align-items: center;
+    padding: 2rem 2.5rem;
+    background: linear-gradient(318.68deg, #0f495c 0%,
+            #0d3640 49.72%,
+            #08141f 100%);
+}
+
+sub-header .sub-link {
+    display: block;
+    color: #ccc;
+    font-size: .75rem;
+    margin-top: .3125rem;
+    text-decoration: underline;
+    text-align: center;
+}
+
+sub-header end .btn {
+    background: none;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+sub-header end .btn:hover {
+    color: #fff;
+    border: 2px solid #ccc;
+}
+
+sub-header end {
+    justify-self: end;
+    align-self: end;
+}
+
+/* Categories */
+categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5.625rem 2.5rem;
+    justify-content: center;
+
+}
+
+categories sub-text {
+    max-width: 850px;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+categories covers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    margin-top: 2.5rem;
+}
+
+categories cover {
+    height: 500px;
+    width: 300px;
+    position: relative;
+}
+
+categories cover cover-grad {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(156.82deg,
+            rgba(0, 0, 0, 0.6) 4.58%,
+            rgba(0, 0, 0, 0) 69.61%),
+        linear-gradient(24.5deg, rgba(0, 0, 0, 0.2) 4.71%, rgba(0, 0, 0, 0) 71.49%);
+}
+
+categories cover img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+categories cover cover-text {
+    position: absolute;
+    top: 1.25rem;
+    left: 1.25rem;
+    text-align: left;
+}
+
+/* Live */
+live {
+    display: block;
+    background: #151516;
+    padding: 2.5rem;
+}
+
+live a {
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    margin-top: 1.25rem;
+    text-decoration: underline;
+}
+
+live-border {
+    display: flex;
+    flex-direction: column;
+    border: 4px solid #1ce783;
+    border-radius: 1rem;
+    padding: 6.25rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Live Sports */
+live-sports {
+    background: url('../img/live-sports.jpg') no-repeat center center / cover;
+    display: block;
+    position: relative;
+    height: 800px;
+}
+
+live-sports-content {
+    display: block;
+    position: absolute;
+    top: 10rem;
+    left: 6.25rem;
+    max-width: 34.375rem;
+}
+
+live-sports-content > * {
+    display: block;
+    position: relative;
+}
+
+live-sports-logos {
+    position: relative;
+    width: 300px;
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+live-sports-logo {
+    display: flex;
+    height: 3.75rem;
+    width: 3.75rem;
+    justify-content: center;
+    align-items: center;
+}
+
+live-sports-logo img:first-child {
+    display: flex;
+    position: absolute;
+    top: 0;
+    height: 3.75rem;
+    width: 3.75rem;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+live-sports-logo img:nth-child(2) {
+    position: relative;
+    width: 2.5rem;
+    z-index: 2;
+}
+
+/* Footer */
+footer {
+    display: block;
+    background: #ebedf2;
+    color: #333;
+}
+
+footer a {
+    color: #333;
+}
+
+footer-container {
+    display: block;
+    max-width: 1100px;
+    margin: auto;
+    padding: 2.5rem;
+}
+
+footer-lists {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer-lists .list-head {
+    text-transform:  uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+divider {
+    display: block;
+    width: 100%;
+    height: .1875rem;
+    border-top: 1px #ccc solid;
+    margin: 1.875rem 0;
+}
+
+social-icons img {
+    width: 1.5625rem;
+    height: 1.5625rem;
+    margin-right: 1.5625rem;
+}
+
+/* Modal */
+modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .5);
+}
+
+modal-box {
+    display: block;
+    z-index: 50;
+    margin: 10% auto;
+    background: #fff;
+    color: #333;
+    position: relative;
+    width: 400px;
+    animation: modalopen 1s;
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+modal-box img {
+    cursor: pointer;
+    height: 1.5rem;
+    width: 1.5rem;
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+}
+
+modal-body {
+    display: block;
+    padding: 1.5rem;
+}
+
+modal-body h3 {
+    font-weight: bold;
+}
+
+modal-body button {
+    background: #000;
+    color: #fff;
+    width: 100%;
+    margin-top: 1.875rem;
+}
+
+modal-footer {
+    display: block;
+    background: #f7f7f9;
+    color: #333;
+    padding: 1.125rem 0;
+    border-top: #eee 1px solid;
+    text-align: center;
+}
+
+modal-footer a {
+    color: steelblue;
+}
+
+/* Form */
+form-control {
+    display: block;
+    margin: 1.125rem 0;
+}
+
+form-control label {
+    display: block;
+    text-transform: uppercase;
+}
+
+form-control input {
+  width: 100%;
+  border: .125rem #ccc solid;
+  border-radius: .3125rem;
+  height: 3.125rem;
+  padding: .3125rem;
+}
+
+/* Media Queries */
+@media(max-width: 1100px) {
+    categories covers {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 768px) {
+    text-xl {
+        line-height: 1.3;
+        font-size: 2.5rem;
+    }
+
+    sub-text {
+        font-size: 1.25rem;
+    }
+
+    header nav {
+        justify-content: space-evenly;
+    }
+
+    header-content img {
+        width: 200px;
+    }
+
+    header-content {
+        text-align: center;
+        padding: 0 1.25rem;
+    }
+
+    header-text-1 {
+        margin-bottom: 2.5rem;
+    }
+
+    header-text-2 {
+        display: none;
+    }
+
+    sub-header {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 1.25rem;
+    }
+
+    sub-header img {
+        width: 15.625rem;
+        margin: auto;
+    }
+
+    sub-header end {
+        justify-self: center;
+        align-self: center;
+    }
+
+    categories covers {
+        grid-template-columns: 1fr;
+    }
+
+    live-border {
+        padding: 1.875rem .625rem;
+    }
+
+    live-sports {
+        background: url('../img/live-sports-small.jpg') no-repeat center center /
+            cover;
+      }
+
+    live-sports-content {
+        top: 1.875rem;
+        left: 1.875rem;
+        margin-top: 3.75rem;
+    }
+
+    footer-lists {
+        flex-direction: column;
+    }
+
+    modal-box {
+        width: 325px;
+    }
+}
