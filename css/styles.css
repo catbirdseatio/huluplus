@@ -414,6 +414,7 @@ modal-body {
 
 modal-body h3 {
     font-weight: bold;
+    text-align: center;
 }
 
 modal-body button {
