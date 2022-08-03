@@ -430,10 +430,16 @@ modal-footer {
     padding: 1.125rem 0;
     border-top: #eee 1px solid;
     text-align: center;
+    margin: .3125rem;
 }
 
-modal-footer a {
+modal a {
     color: steelblue;
+    display: block;
+}
+
+modal form a {
+    text-align: center;
 }
 
 /* Form */
